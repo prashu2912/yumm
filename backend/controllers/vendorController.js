@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 const dotEnv = require('dotenv');
 
 dotEnv.config();
-const secretKey = process.env.Hello;  // Ensure this is properly set in .env
+const secretKey = process.env.JWT_SECRET;  // Ensure this is properly set in .env
 
 // Vendor Registration
 const vendorRegister = async (req, res) => {
